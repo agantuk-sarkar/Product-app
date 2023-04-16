@@ -1,0 +1,56 @@
+*{
+    box-sizing:border-box;
+}
+#container{
+    border:1px solid transparent;
+    height:88vh;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+#addProduct{
+    border:1px solid transparent;
+    height:100%;
+    width:30%;
+    padding-left:3%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#addProduct > h1{
+    color:cadetblue;
+}
+#container #category, #addProduct input, #addProduct textarea{
+    width:90%;
+    padding:8px;
+}
+#addProduct textarea{
+    height:80px;
+}
+#addProduct label{
+    font-size:18px;
+}
+button{
+    width:22%;
+    height:33px;
+    background-color:blue;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+button:hover{
+    cursor:pointer;
+    background-color: orange;
+}
+#productInfo{
+    border:1px solid transparent;
+    height:100%;
+    width:60%;
+    padding-left:2%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#productInfo > h1{
+    color:cadetblue;
+}
+#tableDiv > table{
+    border-collapse:collapse;
+    width:100%;
+}

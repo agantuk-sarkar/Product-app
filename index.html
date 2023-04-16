@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bozaz Product</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="container">
+        <div id="addProduct">
+            <h1>Add Product</h1>
+            <form id="myForm">
+                <div>
+                    <label for="category">Category</label>
+                </div>
+                <br>
+                <div>
+                    <select id="category">
+                        <option hidden>Select category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="homeAppliance">Home Appliance</option>
+                        <option value="books">Books</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="title">Title</label>
+                </div>
+                <br>
+                <div>
+                    <input type="text" id="title" placeholder="Enter Title" required/>
+                </div>
+                <br>
+                <div>
+                    <label for="desc">Description</label>
+                </div>
+                <br>
+                <div>
+                    <textarea id="desc"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="price">Price</label>
+                </div>
+                <br>
+                <div>
+                    <input type="number" id="price" placeholder="Enter Price" required/>
+                </div>
+                <br>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div id="productInfo">
+            <h1>Product Info</h1>
+            <div id="tableDiv">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
